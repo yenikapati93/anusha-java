@@ -1,2 +1,2 @@
 # anusha-java
-this repository for practice  
+this is repository for practice  
