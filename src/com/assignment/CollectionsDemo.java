@@ -30,11 +30,22 @@ public class CollectionsDemo {
 
         }
         System.out.println("While loop");
-        int index = list.size()-1;
-        while (index >=0){
+        int index = 0;
+        while (index <=list.size()-1){
             System.out.println(list.get(index)+" ");
-            index--;
+            index++;
         }
+
+        System.out.println("do While loop");
+
+        index = 0;
+        do{
+
+            System.out.println(list.get(index)+" ");
+            index++;
+        }while (index <=list.size()-1);
+        index = 0;
+
 
     }
 }
