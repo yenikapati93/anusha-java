@@ -33,7 +33,13 @@ public class School {
 
 
         //Assignement:7
-       // Collections.sort(list);
+        System.out.println("Assainment:7");
+        Collections.sort(list, new CompareStudentByName());
+        System.out.println(list.get(0));
+        System.out.println(list.get(1));
+        System.out.println(list.get(2));
+        System.out.println(list.get(3));
+        System.out.println(list.get(4));
 
         //Assignement:9
         Student s6 = new Student(5, "Sateesh","Sateesh@gmail.com");
@@ -101,7 +107,14 @@ public class School {
         set.add(s4);
         set.add(s5);
 
-
+        //Assignment:24
+        Set<Student> sortedSet = new TreeSet<>();
+        sortedSet.add(new Student(5, "Student1"));
+        sortedSet.add(new Student(7, "Student2"));
+        sortedSet.add(new Student(2, "Student3"));
+        sortedSet.add(new Student(1, "Student4"));
+        System.out.println("Assignment:24");
+        System.out.println(sortedSet);
 
     }
 

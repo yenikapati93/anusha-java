@@ -1,6 +1,6 @@
 package com.assignment;
 // Assignment:1
-public class Student {
+public class Student implements Comparable<Student> {
 
     private int id;
     private String name;
@@ -21,7 +21,7 @@ public class Student {
     //overriding toString method
     @Override
     public String toString(){
-        return "idno: " + id + ", Full Name: " + name;
+        return "idno: " + id + ", Full Name: " + name ;
     }
 
 
@@ -47,5 +47,15 @@ public class Student {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public int compareTo(Student s) {
+        if(name.equals(s.name))
+            return 0;
+        else if(id > s.id)
+            return 1;
+        else
+            return -1;
     }
 }

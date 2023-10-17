@@ -1,5 +1,8 @@
 package com.learning;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Calculator {
     public static void main(String[] args) {
         int x = 10;
@@ -58,4 +61,9 @@ public class Calculator {
         public static int incrementby (int i){
             return i++;
       }
+
+
+
+      Map<String,String> m = new HashMap<>();
+
     }
